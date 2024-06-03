@@ -1,4 +1,4 @@
-package site.buraki.observer.common.exceptions;
+package site.buraki.observer.common.exceptions.core;
 
 /**
  * Нарушение бизнес-правил.
