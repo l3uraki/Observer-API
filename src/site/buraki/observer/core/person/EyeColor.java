@@ -1,20 +1,18 @@
 package site.buraki.observer.core.person;
 
 /**
- * Перечисление цветов, используемых бизнес-моделью человека.
+ * Перечисление цветов глаз бизнес-модели человека.
  *
  * @author Расим "Buraki" Эминов
  * @see Person
  * @since 0.1.0
  */
-public enum Color {
+public enum EyeColor {
 
-    BLACK,
     BLUE,
+    BROWN,
+    GREY,
     GREEN,
-    ORANGE,
-    RED,
-    WHITE,
     YELLOW;
 
     @Override

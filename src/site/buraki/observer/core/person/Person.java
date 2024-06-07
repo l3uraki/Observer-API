@@ -65,7 +65,8 @@ import java.util.List;
  * </pre>
  *
  * @author Расим "Buraki" Эминов
- * @see Color
+ * @see HairColor
+ * @see EyeColor
  * @see Location
  * @since 0.1.0
  */
@@ -74,8 +75,8 @@ public class Person implements Comparable<Person> {
     private final long id;
     private String name;
     private final LocalDateTime createdAt;
-    private Color hairColor;
-    private final Color eyeColor;
+    private HairColor hairColor;
+    private final EyeColor eyeColor;
     private float height;
     private float weight;
     private Location location;
@@ -94,7 +95,8 @@ public class Person implements Comparable<Person> {
      * @param location Локация в трёхмерном пространстве.
      * @throws ValidationException Нарушены инварианты бизнес-модели
      *     человека.
-     * @see Color
+     * @see HairColor
+     * @see EyeColor
      * @see Location
      * @since 0.1.0
      */
@@ -102,8 +104,8 @@ public class Person implements Comparable<Person> {
             long id,
             String name,
             LocalDateTime createdAt,
-            Color hairColor,
-            Color eyeColor,
+            HairColor hairColor,
+            EyeColor eyeColor,
             float height,
             float weight,
             Location location
@@ -192,7 +194,7 @@ public class Person implements Comparable<Person> {
         return createdAt;
     }
 
-    public Color getHairColor() {
+    public HairColor getHairColor() {
         return hairColor;
     }
 
@@ -203,10 +205,10 @@ public class Person implements Comparable<Person> {
      * @param newHairColor Новый цвет волос.
      * @throws ValidationException Нарушены инварианты бизнес-модели
      *     человека.
-     * @see Color
+     * @see HairColor
      * @since 0.1.0
      */
-    public void recolorHair(Color newHairColor) throws ValidationException {
+    public void recolorHair(HairColor newHairColor) throws ValidationException {
         List<String> brokenInvariants = new ArrayList<>(1);
 
         if (newHairColor == null) {
@@ -224,7 +226,7 @@ public class Person implements Comparable<Person> {
         hairColor = newHairColor;
     }
 
-    public Color getEyeColor() {
+    public EyeColor getEyeColor() {
         return eyeColor;
     }
 
