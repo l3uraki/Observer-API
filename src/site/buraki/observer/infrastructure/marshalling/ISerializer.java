@@ -8,6 +8,7 @@ import java.util.List;
  *
  * @author Расим "Buraki" Эминов
  * @param <T> Тип сериализуемого объекта.
+ * @see IMarshallingManager
  * @since 0.2.0
  */
 public interface ISerializer<T> {
