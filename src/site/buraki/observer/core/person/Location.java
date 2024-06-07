@@ -18,29 +18,25 @@ import java.util.List;
  *
  * <p>Валидный экземпляр:
  *
- * <pre>
- * {@code
- * Location someLocation = new Location(
- *     "Деревня \"Светлое\"",
- *     new Coordinates(
- *         280.56f,
- *         -359.06f,
- *         839.47f
- *     )
- * );
- * }
- * </pre>
+ * <pre>{@code
+ *     Location someLocation = new Location(
+ *         "Деревня \"Светлое\"",
+ *         new Coordinates(
+ *             280.56f,
+ *             -359.06f,
+ *             839.47f
+ *         )
+ *     );
+ * }</pre>
  *
  * <p>Невалидный экземпляр:
  *
- * <pre>
- * {@code
- * Location someLocation = new Location(
- *     "Деревня \"Тёмное\"" + "?".repeat(512),
- *     null
- * );
- * }
- * </pre>
+ * <pre>{@code
+ *     Location someLocation = new Location(
+ *         "=".repeat(256) + "Деревня \"Тёмное\"" + "=".repeat(256),
+ *         null
+ *     );
+ * }</pre>
  *
  * @author Расим "Buraki" Эминов
  * @see Coordinates

@@ -21,27 +21,23 @@ import java.util.List;
  *
  * <p>Валидный экземпляр:
  *
- * <pre>
- * {@code
- * Coordinates someCoordinates = new Coordinates(
- *     2031.81f,
- *     1002.65f,
- *     511.61f
- * );
- * }
- * </pre>
+ * <pre>{@code
+ *     Coordinates someCoordinates = new Coordinates(
+ *         2031.81f,
+ *         1002.65f,
+ *         511.61f
+ *     );
+ * }</pre>
  *
  * <p>Невалидный экземпляр:
  *
- * <pre>
- * {@code
- * Coordinates someCoordinates = new Coordinates(
- *     -66068.84f,
- *     -9512.35f,
- *     -90799.91f
- * );
- * }
- * </pre>
+ * <pre>{@code
+ *     Coordinates someCoordinates = new Coordinates(
+ *         -66068.84f,
+ *         -9512.35f,
+ *         -90799.91f
+ *     );
+ * }</pre>
  *
  * @author Расим "Buraki" Эминов
  * @since 0.1.0

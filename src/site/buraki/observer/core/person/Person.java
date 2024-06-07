@@ -25,44 +25,40 @@ import java.util.List;
  *
  * <p>Валидный экземпляр:
  *
- * <pre>
- * {@code
- * Person somePerson = new Person(
- *     847,
- *     "Иван",
- *     LocalDateTime.now(),
- *     Color.BLACK,
- *     Color.BLUE,
- *     196.46f,
- *     87.12f,
- *     new Location(
- *         "Посёлок \"Тёмное\"",
- *         new Coordinates(
- *             -910.51f,
- *             692.78f,
- *             2842.49f
+ * <pre>{@code
+ *     Person somePerson = new Person(
+ *         847,
+ *         "Иван",
+ *         LocalDateTime.now(),
+ *         HairColor.BLACK,
+ *         EyeColor.BLUE,
+ *         196.46f,
+ *         87.12f,
+ *         new Location(
+ *             "Посёлок \"Красное\"",
+ *             new Coordinates(
+ *                 -910.51f,
+ *                 692.78f,
+ *                 2842.49f
+ *             )
  *         )
- *     )
- * );
- * }
- * </pre>
+ *     );
+ * }</pre>
  *
  * <p>Невалидный экземпляр:
  *
- * <pre>
- * {@code
- * Person somePerson = new Person(
- *     0,
- *     " ",
- *     null,
- *     null,
- *     null,
- *     -176.31f,
- *     -67.72f,
- *     null
- * );
- * }
- * </pre>
+ * <pre>{@code
+ *     Person somePerson = new Person(
+ *         0,
+ *         " ",
+ *         null,
+ *         null,
+ *         null,
+ *         -176.31f,
+ *         -67.72f,
+ *         null
+ *     );
+ * }</pre>
  *
  * @author Расим "Buraki" Эминов
  * @see HairColor
@@ -86,8 +82,8 @@ public class Person implements Comparable<Person> {
      *
      * @author Расим "Buraki" Эминов
      * @param id Уникальный идентификатор.
-     * @param createdAt Дата создания.
      * @param name Имя.
+     * @param createdAt Дата создания.
      * @param hairColor Цвет волос.
      * @param eyeColor Цвет глаз.
      * @param height Рост.
@@ -308,7 +304,7 @@ public class Person implements Comparable<Person> {
     }
 
     /**
-     * Перемещение экземпляра бизнес-модели человека на другую локацию
+     * Перемещение экземпляра бизнес-модели человека на новую локацию
      * в трёхмерном пространстве.
      *
      * @author Расим "Buraki" Эминов
