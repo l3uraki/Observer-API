@@ -34,10 +34,10 @@ public class ValidationException extends CoreLayerException {
     }
 
     /**
-     * Конструктор исключения с родительским исключением/ошибкой.
+     * Конструктор исключения с причинным исключением/ошибкой.
      *
      * @author Расим "Buraki" Эминов
-     * @param cause Родительское исключение/ошибка.
+     * @param cause Причинное исключение/ошибка.
      * @since 0.1.0
      */
     public ValidationException(Throwable cause) {
@@ -46,11 +46,11 @@ public class ValidationException extends CoreLayerException {
 
     /**
      * Конструктор исключения с детализированным сообщением и
-     * родительским исключением/ошибкой.
+     * причинным исключением/ошибкой.
      *
      * @author Расим "Buraki" Эминов
      * @param detailedMessage Детализированное сообщение.
-     * @param cause Родительское исключение/ошибка.
+     * @param cause Причинное исключение/ошибка.
      * @see ValidationException#ValidationException(String)
      * @see ValidationException#ValidationException(Throwable)
      * @since 0.1.0
@@ -60,11 +60,21 @@ public class ValidationException extends CoreLayerException {
     }
 
     /**
-     * Создание детализированного сообщения, содержащего описания
+     * Конструктор детализированного сообщения, содержащего описания
      * нарушенных инвариантов бизнес-модели.
      *
+     * <p><b>Формат детализированного сообщения</b>:
+     *
+     * <pre>{@literal
+     *     <mainMessage>
+     *     1) <brokenInvariant1>
+     *     2) <brokenInvariant2>
+     *     ...
+     *     n) <brokenInvariantN>
+     * }</pre>
+     *
      * @author Расим "Buraki" Эминов
-     * @param mainMessage Главное сообщение.
+     * @param mainMessage Основное сообщение.
      * @param brokenInvariants Описания нарушенных инвариантов
      *     бизнес-модели.
      * @return Детализированное сообщение.

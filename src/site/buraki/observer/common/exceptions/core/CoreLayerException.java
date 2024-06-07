@@ -31,10 +31,10 @@ public class CoreLayerException extends Exception {
     }
 
     /**
-     * Конструктор исключения с родительским исключением/ошибкой.
+     * Конструктор исключения с причинным исключением/ошибкой.
      *
      * @author Расим "Buraki" Эминов
-     * @param cause Родительское исключение/ошибка.
+     * @param cause Причинное исключение/ошибка.
      * @since 0.1.0
      */
     public CoreLayerException(Throwable cause) {
@@ -43,11 +43,11 @@ public class CoreLayerException extends Exception {
 
     /**
      * Конструктор исключения с детализированным сообщением и
-     * родительским исключением/ошибкой.
+     * причинным исключением/ошибкой.
      *
      * @author Расим "Buraki" Эминов
      * @param detailedMessage Детализированное сообщение.
-     * @param cause Родительское исключение/ошибка.
+     * @param cause Причинное исключение/ошибка.
      * @see CoreLayerException#CoreLayerException(String)
      * @see CoreLayerException#CoreLayerException(Throwable)
      * @since 0.1.0

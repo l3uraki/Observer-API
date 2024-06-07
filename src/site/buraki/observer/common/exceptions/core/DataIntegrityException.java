@@ -31,10 +31,10 @@ public class DataIntegrityException extends CoreLayerException {
     }
 
     /**
-     * Конструктор исключения с родительским исключением/ошибкой.
+     * Конструктор исключения с причинным исключением/ошибкой.
      *
      * @author Расим "Buraki" Эминов
-     * @param cause Родительское исключение/ошибка.
+     * @param cause Причинное исключение/ошибка.
      * @since 0.1.0
      */
     public DataIntegrityException(Throwable cause) {
@@ -43,11 +43,11 @@ public class DataIntegrityException extends CoreLayerException {
 
     /**
      * Конструктор исключения с детализированным сообщением и
-     * родительским исключением/ошибкой.
+     * причинным исключением/ошибкой.
      *
      * @author Расим "Buraki" Эминов
      * @param detailedMessage Детализированное сообщение.
-     * @param cause Родительское исключение/ошибка.
+     * @param cause Причинное исключение/ошибка.
      * @see DataIntegrityException#DataIntegrityException(String)
      * @see DataIntegrityException#DataIntegrityException(Throwable)
      * @since 0.1.0
