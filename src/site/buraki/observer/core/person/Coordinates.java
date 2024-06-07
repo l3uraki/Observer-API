@@ -141,9 +141,9 @@ public class Coordinates implements Comparable<Coordinates> {
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(\n" +
-               ("x=" + x + ", ").indent(4) +
-               ("y=" + y + ", ").indent(4) +
-               ("z=" + z + "\n").indent(4) +
+               ("x=" + x + ",").indent(4) +
+               ("y=" + y + ",").indent(4) +
+               ("z=" + z).indent(4) +
                ")";
     }
 }

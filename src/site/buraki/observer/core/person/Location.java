@@ -110,8 +110,8 @@ public class Location implements Comparable<Location> {
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(\n" +
-               ("name=" + name + ", ").indent(4) +
-               ("coordinates=" + coordinates + "\n").indent(4) +
+               ("name=\"" + name + "\",").indent(4) +
+               ("coordinates=" + coordinates).indent(4) +
                ")";
     }
 }

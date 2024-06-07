@@ -357,14 +357,14 @@ public class Person implements Comparable<Person> {
         DateTimeFormatter dtFormat = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
 
         return getClass().getSimpleName() + "(\n" +
-               ("id=" + id + ", ").indent(4) +
-               ("name=" + name + ", ").indent(4) +
-               ("createdAt=" + createdAt.format(dtFormat) + ", ").indent(4) +
-               ("hairColor=" + hairColor + ", ").indent(4) +
-               ("eyeColor=" + eyeColor + ", ").indent(4) +
-               ("height=" + height + ", ").indent(4) +
-               ("weight=" + weight + ", ").indent(4) +
-               ("location=" + location + "\n").indent(4) +
+               ("id=" + id + ",").indent(4) +
+               ("name=\"" + name + "\",").indent(4) +
+               ("createdAt=\"" + createdAt.format(dtFormat) + "\",").indent(4) +
+               ("hairColor=" + hairColor + ",").indent(4) +
+               ("eyeColor=" + eyeColor + ",").indent(4) +
+               ("height=" + height + ",").indent(4) +
+               ("weight=" + weight + ",").indent(4) +
+               ("location=" + location).indent(4) +
                ")";
     }
 }
