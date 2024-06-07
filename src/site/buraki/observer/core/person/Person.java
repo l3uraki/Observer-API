@@ -296,7 +296,7 @@ public class Person implements Comparable<Person> {
             );
         }
 
-        weight -= delta;
+        weight += delta;
     }
 
     public Location getLocation() {
