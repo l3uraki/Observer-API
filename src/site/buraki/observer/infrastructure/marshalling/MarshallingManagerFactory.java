@@ -1,5 +1,7 @@
 package site.buraki.observer.infrastructure.marshalling;
 
+import site.buraki.observer.infrastructure.marshalling.json.JSONMarshallingManager;
+
 /**
  * Фабрика менеджеров маршалинга.
  *
@@ -8,4 +10,8 @@ package site.buraki.observer.infrastructure.marshalling;
  * @since 0.2.0
  */
 public class MarshallingManagerFactory {
+
+    public static <T> IMarshallingManager<T> getJSONMarshallingManager() {
+        return new JSONMarshallingManager<>();
+    }
 }

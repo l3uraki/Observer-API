@@ -18,6 +18,7 @@ import java.util.List;
  * @author Расим "Buraki" Эминов
  * @param <T> Тип сериализуемого объекта.
  * @see ISerializer
+ * @see JSONMarshallingManager
  * @since 0.3.0
  */
 class Serializer<T> implements ISerializer<T> {

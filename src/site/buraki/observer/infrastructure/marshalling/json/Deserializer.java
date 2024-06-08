@@ -20,6 +20,7 @@ import java.util.List;
  * @author Расим "Buraki" Эминов
  * @param <T> Тип десериализуемого объекта.
  * @see IDeserializer
+ * @see JSONMarshallingManager
  * @since 0.3.0
  */
 class Deserializer<T> implements IDeserializer<T> {
